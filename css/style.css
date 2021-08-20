@@ -35,8 +35,7 @@ header nav .hd_navbar_nav {
   font-family: 'Poppins';
   font-weight: normal;
 }
-header nav .hd_navbar_nav .hd_navbar_item .hd_navbar_link {
-  display: block;
+header nav .hd_navbar_nav .hd_nav_item .hd_nav_link {
   color: #000000;
   font-size: 0.9rem;
   font-weight: 300;
@@ -44,7 +43,7 @@ header nav .hd_navbar_nav .hd_navbar_item .hd_navbar_link {
   padding: 0.4rem;
   margin: 8px;
 }
-header nav .hd_navbar_nav .hd_navbar_item .hd_navbar_link:hover {
+header nav .hd_navbar_nav .hd_nav_item .hd_nav_link:hover {
   text-decoration: underline;
 }
 /****************************** Hero Section *******************************/
