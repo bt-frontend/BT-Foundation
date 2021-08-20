@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'MyPoppinsFont';
+  src: url('/fonts/Poppins-Light.ttf') format('truetype'), url('/fonts/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MyMontserratFont';
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype'), url('/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+:root {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', 'Poppins';
+  font-size: 1rem;
+}
+/****************************** Header Section *******************************/
+header nav {
+  box-shadow: 0px 1px 7px 0px #EFEEEE;
+  background: #FFFFFF;
+}
+header nav .hd_logo {
+  display: flex;
+  flex-flow: column wrap;
+  line-height: 1.1;
+  font-family: 'Montserrat';
+  font-weight: medium;
+}
+header nav .hd_logo .logo-top {
+  font-size: 1.2rem;
+}
+header nav .hd_logo .logo-bottom {
+  font-size: 0.9rem;
+}
+header nav .hd_navbar_nav {
+  font-family: 'Poppins';
+  font-weight: normal;
+}
+header nav .hd_navbar_nav .hd_navbar_item .hd_navbar_link {
+  display: block;
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 0.4rem;
+  margin: 8px;
+}
+header nav .hd_navbar_nav .hd_navbar_item .hd_navbar_link:hover {
+  text-decoration: underline;
+}
+/****************************** Hero Section *******************************/
+.hero_section {
+  margin-top: 62px;
+}
+.hero_section .hero_sec_img {
+  height: 580px;
+  width: 100%;
+  object-fit: cover;
+}
+.hero_section .hero_sec_carousel_cap {
+  display: block;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background: radial-gradient(black, transparent);
+}
+.hero_section .hero_sec_carousel_cap .hero_sec_carousel_cap_description {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 720px) {
+  .hero_section .hero_sec_carousel_cap .hero_sec_carousel_cap_description {
+    width: 100%;
+  }
+}
+.hero_section .hero_sec_carousel_cap .hero_sec_carousel_cap_description .hero_sec_title {
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+.hero_section .hero_sec_carousel_cap .hero_sec_carousel_cap_description .hero_sec_description {
+  font-size: 1.1rem;
+  margin-bottom: 1.4rem;
+  font-weight: 200;
+}
+.hero_section .hero_sec_carousel_cap .hero_sec_carousel_cap_description .hero_sec_btn {
+  background: #705CFC;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 46px;
+  border-radius: 26px;
+}
+.hero_section .hero_sec_carousel_cap .hero_sec_carousel_cap_description .hero_sec_btn:hover {
+  box-shadow: 1px 1px 6px 0px #705CFC;
+}
+/****************************** About Section *******************************/
+.about_sec {
+  padding: 4rem 0;
+  background: #EFEEEE;
+}
+.about_sec .about_title {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+/****************************** Member Section *******************************/
+.member_sec {
+  padding: 4rem 0;
+}
+.member_sec .member_title {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.member_sec .member_card {
+  border: 0;
+}
+.member_sec .member_card .member_user_img {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.member_sec .member_card .member_name {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.member_sec .member_card .member_position {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+/****************************** Contact Section *******************************/
+.contact_sec {
+  padding: 4rem 0;
+  background: #EFEEEE;
+}
+.contact_sec .contact_form_wrapper .contact_form_wrapper_title {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+.contact_sec .contact_form_wrapper .contact_form {
+  width: 80%;
+  margin: 0 auto;
+}
+.contact_sec .contact_form_wrapper .contact_form .contact_sec_btn {
+  padding: 10px 54px;
+  background: #5AAAF1;
+  border: none;
+}
+.contact_sec .contact_sec_label {
+  margin: 0px 12px;
+}
+/****************************** Footer Section *******************************/
+.footer {
+  font-size: 0.9rem;
+  color: #EFEEEE;
+  background: #272727;
+}
+.footer .footer_wrapper {
+  padding: 0.8rem 0;
+}
+#btn_back_to_top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}

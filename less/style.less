@@ -1,0 +1,255 @@
+// Color Variables
+@primary-color:     #705CFC;
+@secondary-color:   #DEFFF0;
+@light-color:       #5AAAF1;
+@extra-light-color: #EFEEEE;
+@dark-color:        #272727;
+
+@black-color:      #000000;
+@white-color:      #FFFFFF;
+
+// Font Family
+@font-family: 'Montserrat', 'Poppins';
+
+@tablet: ~"only screen and (max-width: 720px)";
+
+@font-face {
+    font-family: 'MyPoppinsFont';
+    src: url('/fonts/Poppins-Light.ttf')format('truetype'),
+         url('/fonts/Poppins-Regular.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'MyMontserratFont';
+    src: url('/fonts/Montserrat-Regular.ttf')format('truetype'), 
+         url('/fonts/Montserrat-Medium.ttf')format('truetype');
+         
+}
+
+@font-size-base: 1rem;
+
+:root {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: @font-family;
+    font-size: @font-size-base;
+}
+
+
+/****************************** Header Section *******************************/
+header {
+    nav {
+
+        box-shadow: 0px 1px 7px 0px @extra-light-color;
+        background: @white-color;
+
+        // logo
+        .hd_logo {
+            display: flex;
+            flex-flow: column wrap;
+            line-height: 1.1;
+            font-family: 'Montserrat';
+            font-weight: medium;
+    
+            .logo-top {
+                font-size: 1.2rem;
+            }
+    
+            .logo-bottom {
+                font-size: 0.9rem;
+            }
+        }
+    
+        // nav item
+        .hd_navbar_nav {
+            font-family: 'Poppins';
+            font-weight: normal;
+    
+            .hd_navbar_item {
+
+                .hd_navbar_link {
+                    display: block;
+
+                    color: @black-color;
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                    text-decoration: none;
+                    padding: 0.4rem;
+                    margin: 8px;
+    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+/****************************** Hero Section *******************************/
+.hero_section {
+    margin-top: 62px;
+
+    .hero_sec_img {
+        height: 580px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .hero_sec_carousel_cap {
+        display: block;
+
+        right: 0;
+        left: 0;
+
+        height: 100%;
+        background: radial-gradient(black, transparent);
+
+        .hero_sec_carousel_cap_description {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 50%;
+            margin: 0 auto;
+
+            @media  @tablet {
+                width: 100%;
+            }
+
+            .hero_sec_title {
+                font-size: 1.8rem;
+                margin-bottom: 1.6rem;
+            }
+    
+            .hero_sec_description {
+                font-size: 1.1rem;
+                margin-bottom: 1.4rem;
+                font-weight: 200;
+            }
+
+            .hero_sec_btn {
+                background: @primary-color;
+                border: none;
+                text-transform: uppercase;
+                padding: 10px 46px;
+                border-radius: 26px;
+
+                &:hover {
+                    box-shadow: 1px 1px 6px 0px @primary-color;
+                }
+            }
+        }
+        
+    }
+}
+
+
+/****************************** About Section *******************************/
+.about_sec {
+
+    padding: 4rem 0;
+    background: @extra-light-color;
+
+    .about_title {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/****************************** Member Section *******************************/
+.member_sec {
+    
+    padding: 4rem 0;
+
+    .member_title {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .member_card {
+        border: 0;
+
+        .member_user_img {
+            height: 170px;
+            width: 170px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .member_name {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .member_position {
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+    }
+}
+
+
+/****************************** Contact Section *******************************/
+.contact_sec {
+
+    padding: 4rem 0;
+    background: @extra-light-color;
+
+    .contact_form_wrapper {
+
+        .contact_form_wrapper_title {
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+        }
+
+
+        .contact_form {
+            width: 80%;
+            margin: 0 auto;
+
+            .contact_sec_btn {
+                padding: 10px 54px;
+                background: @light-color;
+                border: none;
+                // border-radius: 0;
+            }
+        }
+    }
+
+    .contact_sec_label {
+        margin: 0px 12px;
+    }
+}
+
+/****************************** Footer Section *******************************/
+.footer {
+    font-size: 0.9rem;
+    color: @extra-light-color;
+    background: @dark-color;
+
+    .footer_wrapper {
+        padding: 0.8rem 0;
+    }
+}
+
+
+#btn_back_to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+
+    // added
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
